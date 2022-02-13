@@ -144,28 +144,31 @@
 .casa-verde-wrapper{
   display: flex;
   flex-direction: row;
-  margin-left: 22px;
-  margin-right: 22px;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  align-items: center;
+  margin: 8rem 4rem;
+  max-width: 90%;
+
 }
 
 .descricao-casa-verde{
   font-family: var(--font-primary);
   font-weight: 400;
-  width: 100%;
+  width: 50%;
+  height: 50%;
+  margin-left: 22px;
 }
 
 .img-casa-verde{
-  width: 100%;
-  margin: 22px;
+  width: 50%;
+  height: 50%;
+  margin-right: 22px;
 }
 
 .descricao-casa-verde h2{
   font-weight: 400;
   font-size: 32px;
   line-height: 45px;
-  margin: 22px;
+  margin-left: 22px;
 }
 
 .descricao-casa-verde p{
@@ -174,3 +177,226 @@
   margin-left: 22px;
   margin-bottom: 22px;
 }
+
+/*DEPOIMENTOS*/
+
+.section-depoimentos{
+  padding: 8rem 6rem;
+  background-color:rgba(245, 248, 250, 1);
+}
+
+.card-depoimentos{
+  display: flex;
+  justify-content: space-around;
+  padding: 22px;
+  min-width: fit-content;
+}
+
+.depoimentos{
+  background-color: #ffffff;
+  margin: 22px;
+  padding: 22px;
+}
+
+
+.depoimentos img{
+  min-width: 58px;
+  border-radius: 50%;
+}
+
+.depoimentos p{
+  font-family: var(--font-primary);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #071110;
+
+}
+
+.avatar-depoimentos{
+  display: flex;
+  align-items: center;  
+  margin-top: 22px;
+}
+
+.avatar-depoimentos p{
+  margin-left: 20px;
+}
+
+
+
+
+
+/*FORMULÁRIO*/
+
+form{
+  overflow: hidden;
+  height: 100%;
+}
+
+.formulario{
+  position: absolute;
+  width: 23rem;
+  height: 45rem;
+  top: 15rem;
+  right: 8.5rem;
+  border: 1px none #FFFFFF;
+  padding: 45px;
+  background-color: rgba(255, 255, 255, 1.0);
+  border-radius: 0px;
+  font-family: var(--font-primary);
+  color: #071110;
+  font-weight: 400;
+  
+
+}
+
+.campo-formulario{
+  margin-bottom: 22px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label{
+  padding: 6px 0px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  text-decoration: none;
+  color: #071110;
+  font-size: 16px;
+}
+
+.campo-obrigatorio{
+  color: red;
+}
+
+.campo-formulario input{
+  display: block;
+  border-radius: 3%;
+  width: 100%;
+  height: 2.2rem;
+  background-color: #f0f0f0;
+  background-image: none;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 18px;
+  margin-top: 12px;
+}
+
+select{
+  display: block;
+  border-radius: 3%;
+  width: 100%;
+  height: 2.2rem;
+  background-color: #f0f0f0;
+  background-image: none;
+  border-radius: 8px;
+  border: none;
+  margin-top: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #071110;
+  font-size: 16px;
+  font-family: var(--font-primary);
+}
+
+.checkbox{
+  display: inline;
+  padding-top: 30px;
+}
+
+.button-formulario{
+  border: 1px solid #9d2cd4;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: rgba(157, 44, 212, 1.0);
+  color: #ffffff;
+  text-transform: none;
+  width: 100%;
+  height: 2.8rem;
+  margin-top: 22px;
+}
+
+.button-formulario:hover{
+  opacity: 0.8;
+}
+
+
+
+.sessao-formulario{
+  padding: 8rem;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(155, 204, 209, 1);
+}
+
+.sessao-formulario h1{
+  font-family: var(--font-primary);
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+.segundo-formulario{
+  width: 23rem;
+  height: 45rem;
+  border: 1px none #FFFFFF;
+  padding: 45px;
+  background-color: rgba(255, 255, 255, 1.0);
+  border-radius: 0px;
+  font-family: var(--font-primary);
+  color: #071110;
+  font-weight: 400;
+  margin: auto;
+}
+
+/*FOOTER*/
+
+.midias-sociais{
+  display: flex;
+  width: 10rem;
+  height: 5rem;
+  margin-left: 5rem;
+  margin-bottom: -3.5rem;
+}
+
+.img-footer{
+  margin: 3rem 5rem 6rem 5rem;
+}
+
+.midias-sociais i{
+  text-align: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  background-color: #9d2cd5;
+  color: #ffffff;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.midias-sociais i:hover{
+  background-color: #63118b;
+}
+
+
+.copyright{
+  font-family: var(--font-primary);
+  text-align: end;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+  padding-bottom: 2rem;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #071110;
+}
+
+
+
+
+
