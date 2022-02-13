@@ -78,7 +78,6 @@
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  margin: 22px;
 }
 .livar-destaque{
   color: #9d2cd5;
@@ -102,6 +101,7 @@
   font-family: var(--font-primary);
   margin-left: 22px;
   line-height: 22px;
+  width: 300px;
 }
 .card-beneficios h3{
   font-size: 28px;
