@@ -19,18 +19,23 @@
 
 .img-bg{
   width: 100%;
-  height: 100vh;
+  height: 1200px;
   object-fit: cover;
 }
 
 .banner{
   position: absolute;
-  top: 25%;
-  left: 10%;
-  width: 38%;
+  top: 15rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.banner h1{
+.banner-text{
+  width: 50%;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+.banner-text h1{
   font-family: var(--font-primary);
   font-size: 40px;
   font-weight: 400;
@@ -40,7 +45,7 @@
   margin: 0 0 1.4rem;
 }
 
-.banner h3{
+.banner-text h3{
   font-family: var(--font-primary);
   font-size: 28px;
   font-weight: 400;
@@ -49,6 +54,132 @@
   text-decoration: none;
   margin: 0 0 1.4rem;
 }
+
+/*FORMULÁRIO*/
+
+form{
+  overflow: hidden;
+  height: 100%;
+}
+
+.preencher-formulario h2{
+  font-family: var(--font-primary);
+  color: #9d2cd4;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 28px;
+}
+
+.formulario-wrapper{
+  width: 50%;
+  overflow: hidden;
+}
+.formulario{
+  width: 23rem;
+  height: 100%;
+  border: 1px none #FFFFFF;
+  padding: 45px;
+  background-color: rgba(255, 255, 255, 1.0);
+  font-family: var(--font-primary);
+  color: #071110;
+  font-weight: 400;
+  min-width: fit-content;
+  margin-right: 28px;
+}
+
+.campo-formulario{
+  margin-bottom: 22px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+label{
+  padding: 6px 0px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  text-decoration: none;
+  color: #071110;
+  font-size: 16px;
+}
+
+.campo-obrigatorio{
+  color: red;
+}
+
+.campo-formulario input{
+  display: block;
+  border-radius: 3%;
+  width: 100%;
+  height: 2.3rem;
+  background-color: #f0f0f0;
+  background-image: none;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 18px;
+  margin-top: 12px;
+}
+
+select{
+  display: block;
+  border-radius: 3%;
+  width: 100%;
+  height: 2.2rem;
+  background-color: #f0f0f0;
+  background-image: none;
+  border-radius: 8px;
+  border: none;
+  margin-top: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #071110;
+  font-size: 16px;
+  font-family: var(--font-primary);
+}
+
+.checkbox{
+  display: inline;
+  padding-top: 30px;
+}
+
+.button-formulario{
+  border: 1px solid #9d2cd4;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: rgba(157, 44, 212, 1.0);
+  color: #ffffff;
+  text-transform: none;
+  width: 100%;
+  height: 2.9rem;
+  margin-top: 22px;
+}
+
+.button-formulario:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.sessao-formulario{
+  padding: 8rem;
+  align-items: center;
+  background-color: rgba(155, 204, 209, 1);
+}
+
+.sessao-formulario h1{
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+
 
 /* BENEFICIOS */
 
@@ -189,13 +320,16 @@
   display: flex;
   justify-content: space-around;
   padding: 22px;
-  min-width: fit-content;
+  width: 100%;
+  
 }
 
 .depoimentos{
   background-color: #ffffff;
   margin: 22px;
   padding: 22px;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -217,6 +351,7 @@
   display: flex;
   align-items: center;  
   margin-top: 22px;
+  
 }
 
 .avatar-depoimentos p{
@@ -224,129 +359,7 @@
 }
 
 
-
-
-
-/*FORMULÁRIO*/
-
-form{
-  overflow: hidden;
-  height: 100%;
-}
-
-.formulario{
-  position: absolute;
-  width: 23rem;
-  height: 45rem;
-  top: 15rem;
-  right: 8.5rem;
-  border: 1px none #FFFFFF;
-  padding: 45px;
-  background-color: rgba(255, 255, 255, 1.0);
-  border-radius: 0px;
-  font-family: var(--font-primary);
-  color: #071110;
-  font-weight: 400;
-  
-
-}
-
-.campo-formulario{
-  margin-bottom: 22px;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-label{
-  padding: 6px 0px;
-  font-family: var(--font-primary);
-  font-weight: 400;
-  text-decoration: none;
-  color: #071110;
-  font-size: 16px;
-}
-
-.campo-obrigatorio{
-  color: red;
-}
-
-.campo-formulario input{
-  display: block;
-  border-radius: 3%;
-  width: 100%;
-  height: 2.3rem;
-  background-color: #f0f0f0;
-  background-image: none;
-  border-radius: 8px;
-  border: none;
-  margin-bottom: 18px;
-  margin-top: 12px;
-}
-
-select{
-  display: block;
-  border-radius: 3%;
-  width: 100%;
-  height: 2.2rem;
-  background-color: #f0f0f0;
-  background-image: none;
-  border-radius: 8px;
-  border: none;
-  margin-top: 18px;
-  font-weight: 400;
-  text-decoration: none;
-  color: #071110;
-  font-size: 16px;
-  font-family: var(--font-primary);
-}
-
-.checkbox{
-  display: inline;
-  padding-top: 30px;
-}
-
-.button-formulario{
-  border: 1px solid #9d2cd4;
-  font-family: var(--font-primary);
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 18px;
-  text-decoration: none;
-  background-color: rgba(157, 44, 212, 1.0);
-  color: #ffffff;
-  text-transform: none;
-  width: 100%;
-  height: 2.9rem;
-  margin-top: 22px;
-}
-
-.button-formulario:hover{
-  opacity: 0.8;
-  cursor: pointer;
-}
-
-
-
-.sessao-formulario{
-  padding: 8rem;
-  align-items: center;
-  background-color: rgba(155, 204, 209, 1);
-}
-
-.sessao-formulario h1{
-  text-align: center;
-  font-family: var(--font-primary);
-  font-size: 40px;
-  line-height: 56px;
-  font-weight: 400;
-  color: #ffffff;
-  margin-bottom: 22px;
-}
 .segundo-formulario{
-  width: 30rem;
-  height: 45rem;
   border: 1px none #FFFFFF;
   padding: 45px;
   background-color: rgba(255, 255, 255, 1.0);
@@ -355,6 +368,9 @@ select{
   color: #071110;
   font-weight: 400;
   margin: auto;
+  width: 30rem;
+  height: 100%;
+  min-width: fit-content;
 }
 
 /*FOOTER*/
@@ -386,7 +402,6 @@ select{
   
 }
 
-
 .copyright{
   font-family: var(--font-primary);
   text-align: end;
@@ -399,6 +414,228 @@ select{
   color: #071110;
 }
 
+@media (max-width: 1000px){
+  
+  .img-bg{
+    height: 1400px;
+  }
+
+  .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .banner-text{
+    width: 70%;
+    text-align: center;
+  }
+
+  .formulario{
+    width: auto;
+    height: 100%;
+    min-width: fit-content;
+  }
+
+  .formulario-wrapper{
+    width: 80%;
+    margin-left: 22px;
+  }
+
+  .card-depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  .segundo-formulario{
+    width: 25rem;
+    height: 100%;
+    min-width: fit-content;
+  }
+  
+}
+
+@media (max-width:740px){
+  .img-bg{
+    height: 1500px;
+  }
+  .formulario-wrapper{
+    width: 80%;
+    margin-left: 22px;
+  }
+  .formulario form{
+    width: 100%;
+  }
+  .descricao-beneficios{
+    margin:4rem 0px;
+  }
+  .header-beneficios{
+    margin: 0px 22px;
+  }
+  .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-beneficios{
+    margin-bottom: 40px;
+    width: 80%;
+  }
+
+  .casa-verde-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .img-casa-verde{
+    width: 80%;
+    margin-bottom: 40px;
+    margin-right: 0px;
+  }
+  .descricao-casa-verde{
+    width: 80%;
+    margin-bottom: 40px;
+    margin-left: 0px;
+  }
+
+  .card-depoimentos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 22px;
+    width: auto;
+  }
+  .section-depoimentos{
+    padding: 8rem 0rem;
+  }
+  .sessao-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+}
+
+@media (max-width:550px){
+  .img-bg{
+    height: 1550px;
+  }
+
+  .formulario-wrapper{
+    width: 95%;
+  }
+  .empresas-parceiras{
+    padding-top: 50px;
+  }
+  .img-empresas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .img-empresas img{
+    width: 160px;
+  }
+
+  .segundo-formulario{
+    width: 22rem;
+  }
+
+  .copyright{
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .midias-sociais{
+    margin-left: 1rem;
+  }
+  .img-footer{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 1rem;
+  }
+  .sessao-formulario{
+    padding: 4rem;
+    background-color: #ffffff;
+  }
+  .sessao-formulario section{
+    width: 100%;
+  }
+
+  .sessao-formulario h1{
+    font-size: 36px;
+    color: #071110;
+    margin-bottom: 0px;
+  }
+
+  .casa-verde-wrapper{
+    margin: 8rem 1rem;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .sessao-formulario{
+    padding: 2rem 1rem;
+  }
+  .sessao-formulario h1{
+    font-size: 40px;
+    color: rgba(155, 204, 209, 1);
+  }
+  .segundo-formulario{
+    width: auto;
+    height: 100%;
+    min-width: fit-content;
+  }
+
+  .linha-footer{
+    background-color: #9d2cd4;
+    width: 100%;
+    height: 1px;
+    border: 1px solid #9d2cd4;
+  }
+
+  .footer{
+    display: grid;
+  }
+  .copyright{
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width:360px) {
+  .img-bg{
+    height: 1650px;
+  }
+
+  .casa-verde-wrapper{
+    margin: 8rem 1rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  .sessao-formulario{
+    padding: 2rem 1rem;
+  }
+  .sessao-formulario h1{
+    font-size: 40px;
+    color: rgba(155, 204, 209, 1);
+  }
+  .segundo-formulario{
+    width: auto;
+    height: 100%;
+    min-width: fit-content;
+  }
+  .linha-footer{
+    background-color: #9d2cd4;
+    width: 100%;
+    height: 1px;
+    border: 1px solid #9d2cd4;
+  }
+  .preencher-formulario{
+    font-size: 36px;
+  }
+}
 
 
 
